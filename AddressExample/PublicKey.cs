@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AddressExample
+﻿namespace AddressExample
 {
     public class PublicKey
     {
@@ -18,5 +16,14 @@ namespace AddressExample
             return _value;
         }
 
+        public Address ToAddress()
+        {
+            return new Address(AddressFromPublicKey(_value));
+        }
+
+        public static string AddressFromPublicKey(string pubKeyHex)
+        {
+            return null;
+        }
     }
 }

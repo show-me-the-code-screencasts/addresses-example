@@ -7,7 +7,7 @@
 
     public class RawTransaction
     {
-        public string ToAddress { get; set; }
+        public Address ToAddress { get; set; }
         public string Amount { get; set; }
     }
 }
