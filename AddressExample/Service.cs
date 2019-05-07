@@ -7,7 +7,8 @@
         public void BetterFoo(string targetPrivateKey)
         {
             PrivateKey target = new PrivateKey(targetPrivateKey);
-            Address targetAddress = target.ToPublicKey().ToAddress();
+            PublicKey publicKey = target.ToPublicKey();
+            Address targetAddress = publicKey.ToAddress();
 
             _transactionSender.Send(target, new RawTransaction
             {
