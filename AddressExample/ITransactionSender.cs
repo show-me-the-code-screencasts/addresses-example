@@ -2,8 +2,7 @@
 {
     public interface ITransactionSender
     {
-        string Send(string privateKeyHex, RawTransaction transaction);
-        string Send(byte[] privateKey, RawTransaction transaction);
+        string Send(PrivateKey privateKey, RawTransaction transaction);
     }
 
     public class RawTransaction
