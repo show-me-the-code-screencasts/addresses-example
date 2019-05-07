@@ -38,5 +38,15 @@ namespace AddressExample
         {
             return _value;
         }
+
+        public PublicKey ToPublicKey()
+        {
+            return new PublicKey(PublicKeyFromPrivateKey(_value));
+        }
+
+        private static string PublicKeyFromPrivateKey(string privateKeyHex)
+        {
+            return null;
+        }
     }
 }

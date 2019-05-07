@@ -12,16 +12,6 @@
             return null;
         }
 
-        public static string PublicKeyFromPrivateKey(byte[] privateKeyBytes)
-        {
-            return null;
-        }
-
-        public static string PublicKeyFromPrivateKey(string privateKeyHex)
-        {
-            return null;
-        }
-
         public static string AddressFromPublicKey(string pubKeyHex)
         {
             return null;
